@@ -43,34 +43,63 @@ p {
     color: #000000;   
 }
 
-.columnaAlu{
-    text-align: left;
-    display: grid;
-    margin: 15px auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    max-width: 900px;
+.TablaA{
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
     border: 2px solid rgba(0, 174, 130, 0.526);
-    background: linear-gradient(5deg, #165bf05a 10%, #20ff3e36 90%);
+    background: linear-gradient(5deg, #0051ff4a 10%, #00ff2229 90%);
 }
+
+.TablaA thead th{
+    border: 1px solid #0000001f;
+    padding: 10px;
+    text-align: center;
+}
+
+/*no sirve */
+.TablaA tbody th{
+    border: 1px solid #000000;
+    padding: 8px 12px;
+}
+
+.TablaA tbody td:first-child{
+    padding: 8px 12px;
+    border: 1px solid #0000001f;
+    text-align: left;
+    font-weight: 500;
+}
+
+.TablaA tbody td:not(:first-child) {
+    border: 1px solid #0000001f;
+    text-align: center;
+    width: 90px;
+}
+
+
+.TablaA tbody tr:hover td {
+    background-color: #ff008019;
+}
+
+
+
 
 .columnaAA{
     text-align: center;
     display: grid;
     margin: 15px auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    max-width: 400px;
+    padding: 8px 12px;
+    max-width: 350px;
     border: 2px solid rgba(202, 94, 0, 0.649);
     background: linear-gradient(5deg, #ffff005a 0%, #ff202036 120%);
 
 }
 
-
-columnaAlu:hover{
-    background-color: #ffffff;
-
+.columnaAA il{
+    padding: 8px 12px;
 }
+
 
 
 
